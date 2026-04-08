@@ -129,6 +129,7 @@ h3 {
   margin: 0.85rem 0 0;
   color: var(--muted);
   font-size: 0.92rem;
+  text-align: center;
 }
 
 .hero-copy {
@@ -451,16 +452,22 @@ h1 {
 }
 
 .site-footer {
-  padding: 2.2rem 0 3rem;
+  padding: 2.2rem 0 3.4rem;
 }
 
 .footer-wrap {
   border-top: 1px solid rgba(222, 211, 196, 0.9);
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  padding-top: 1rem;
-  color: var(--muted);
+  display: grid;
+  gap: 0.7rem;
+  padding-top: 1.6rem;
+  color: #82786d;
+}
+
+.footer-wrap p {
+  margin: 0;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: clamp(1.7rem, 4vw, 2.7rem);
+  line-height: 1.12;
 }
 
 @media (max-width: 900px) {
@@ -487,8 +494,7 @@ h1 {
     width: min(var(--container), calc(100% - 1.2rem));
   }
 
-  .nav-wrap,
-  .footer-wrap {
+  .nav-wrap {
     flex-direction: column;
     align-items: flex-start;
   }
