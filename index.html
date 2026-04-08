@@ -3,160 +3,320 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Qianhui Xu</title>
+  <title>Qianhui Xu | Economics PhD Student</title>
+  <meta
+    name="description"
+    content="Qianhui Xu is a PhD student in economics at Georgia State University working in labor economics, public economics, and health economics."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Source+Sans+3:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Navigation -->
-  <nav>
-    <span class="nav-name">Qianhui Xu</span>
-    <div class="nav-links">
-      <a href="#research">Research</a>
-      <a href="#updates">Updates</a>
-      <a href="cv.pdf">CV</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="wordmark" href="#top">Qianhui Xu</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#updates">Updates</a>
+        <a href="#teaching">Teaching</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <div class="container">
-
-    <!-- Header: photo + bio -->
-    <header>
-      <div class="header-text">
-        <h1>Qianhui Xu</h1>
-        <p class="subtitle">PhD Student, Department of Economics<br>Georgia State University</p>
-        <p class="bio">
-          I am a second-year PhD student in economics at Georgia State University.
-          My research interests are in <strong>labor economics</strong>, <strong>public economics</strong>,
-          and <strong>health economics</strong>.
-        </p>
-        <p class="contact">
-          <a href="mailto:qxu12@gsu.edu">qxu12@gsu.edu</a>
-          &nbsp;·&nbsp;
-          <a href="cv.pdf">Curriculum Vitae</a>
-          &nbsp;·&nbsp;
-          <a href="https://scholar.google.com/citations?user=aEYqAjsAAAAJ&hl=en" target="_blank">Google Scholar</a>
-        </p>
-      </div>
-      <div class="header-photo">
-        <img src="photo.jpg" alt="Qianhui Xu">
-      </div>
-    </header>
-
-    <!-- Research -->
-    <section id="research">
-      <h2>Research</h2>
-
-      <!-- Filter buttons -->
-      <div class="filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="working-paper">Working Papers</button>
-        <button class="filter-btn" data-filter="publication">Publications</button>
-      </div>
-
-      <div class="papers">
-
-        <!-- Working Papers placeholder -->
-        <div class="paper" data-type="working-paper">
-          <div class="paper-meta">
-            <span class="tag">Working Paper</span>
-          </div>
-          <div class="paper-title">Working paper coming soon</div>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="portrait-card">
+          <img
+            src="assets/qianhui-xu-placeholder.svg"
+            alt="Portrait placeholder for Qianhui Xu"
+            class="portrait"
+          >
+          <p class="portrait-note">Replace this image with your headshot later.</p>
         </div>
 
-        <!-- Publication 1 -->
-        <div class="paper" data-type="publication">
-          <div class="paper-meta">
-            <span class="tag">Publication</span>
-            <span class="year">2022</span>
+        <div class="hero-copy">
+          <p class="eyebrow">Department of Economics, Georgia State University</p>
+          <h1>Qianhui Xu</h1>
+          <p class="title">PhD Student, Department of Economics, Georgia State University</p>
+
+          <ul class="meta-list">
+            <li><span>Email</span> <a href="mailto:qxu12@gsu.edu">qxu12@gsu.edu</a></li>
+            <li><span>Fields</span> Labor Economics, Public Economics, Health Economics</li>
+            <li><span>CV</span> <a href="cv.html">Curriculum Vitae</a></li>
+          </ul>
+
+          <div class="intro" id="about">
+            <p>
+              I am a second-year PhD student in economics at Georgia State University.
+              My interests lie at the intersection of labor economics, public economics,
+              and health economics.
+            </p>
+            <p>
+              I am currently developing research projects in applied microeconomics and
+              building a portfolio of work that reflects my interests in policy-relevant
+              questions and empirical analysis.
+            </p>
           </div>
-          <div class="paper-title">
-            The mechanism of household waste sorting behaviour—A study of Jiaxing, China
-          </div>
-          <div class="paper-authors">Q. Liu, <strong>Q. Xu</strong>, X. Shen, B. Chen, S. S. Esfahani</div>
-          <div class="paper-journal">
-            <em>International Journal of Environmental Research and Public Health</em>, 19(4), 2447
-          </div>
-          <button class="abstract-toggle">+ Abstract</button>
-          <div class="abstract">
-            <p>This study investigates the mechanisms behind household waste sorting behaviour
-            in Jiaxing, China, providing insights into environmental compliance and policy design.</p>
-          </div>
-          <div class="paper-links">
-            <a href="https://doi.org/10.3390/ijerph19042447" target="_blank">Publisher</a>
-            &nbsp;·&nbsp;
-            <a href="https://scholar.google.com/citations?user=aEYqAjsAAAAJ&hl=en" target="_blank">Google Scholar</a>
+
+          <div class="hero-links" aria-label="Profile links">
+            <a class="button-link" href="https://scholar.google.com/citations?user=aEYqAjsAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+            <a class="button-link button-link-muted" href="#research">Current Research</a>
           </div>
         </div>
-
-        <!-- Publication 2 -->
-        <div class="paper" data-type="publication">
-          <div class="paper-meta">
-            <span class="tag">Publication</span>
-            <span class="year">2022</span>
-          </div>
-          <div class="paper-title">
-            Predicting sustainable food consumption across borders based on the theory of planned behavior: A meta-analytic structural equation model
-          </div>
-          <div class="paper-authors">X. Shen, <strong>Q. Xu</strong>, Q. Liu</div>
-          <div class="paper-journal">
-            <em>PLOS ONE</em>, 17(11), e0275312
-          </div>
-          <button class="abstract-toggle">+ Abstract</button>
-          <div class="abstract">
-            <p>Using meta-analytic structural equation modeling, this paper examines predictors
-            of sustainable food consumption behavior across different cultural contexts,
-            drawing on the theory of planned behavior.</p>
-          </div>
-          <div class="paper-links">
-            <a href="https://doi.org/10.1371/journal.pone.0275312" target="_blank">Publisher</a>
-            &nbsp;·&nbsp;
-            <a href="https://scholar.google.com/citations?user=aEYqAjsAAAAJ&hl=en" target="_blank">Google Scholar</a>
-          </div>
-        </div>
-
-        <!-- Publication 3 -->
-        <div class="paper" data-type="publication">
-          <div class="paper-meta">
-            <span class="tag">Publication</span>
-            <span class="year">2023</span>
-          </div>
-          <div class="paper-title">
-            The relationship between supply chain resilience, supply chain integration, and supply chain performance: A MASEM analysis
-          </div>
-          <div class="paper-authors">X. Shen, <strong>Q. Xu</strong>, Q. Liu, M. Leibercht</div>
-          <div class="paper-journal">
-            <em>Journal of Intelligent &amp; Fuzzy Systems</em>, 45(2), 3361–3377
-          </div>
-          <button class="abstract-toggle">+ Abstract</button>
-          <div class="abstract">
-            <p>This paper employs meta-analytic structural equation modeling (MASEM) to
-            synthesize the literature on supply chain resilience, integration, and performance,
-            offering quantitative evidence on their interrelationships.</p>
-          </div>
-          <div class="paper-links">
-            <a href="https://doi.org/10.3233/JIFS-230296" target="_blank">Publisher</a>
-            &nbsp;·&nbsp;
-            <a href="https://scholar.google.com/citations?user=aEYqAjsAAAAJ&hl=en" target="_blank">Google Scholar</a>
-          </div>
-        </div>
-
       </div>
     </section>
 
-    <!-- Updates -->
-    <section id="updates">
-      <h2>Updates</h2>
-      <ul class="updates-list">
-        <li>
-          <span class="update-date">Fall 2024</span>
-          Started PhD in Economics at Georgia State University.
-        </li>
-      </ul>
+    <section class="section">
+      <div class="container section-grid">
+        <div class="section-label">
+          <p>Research</p>
+        </div>
+        <div class="section-content" id="research">
+          <div class="section-heading">
+            <h2>Research agenda</h2>
+            <p>
+              This section combines current PhD-stage work with selected earlier research.
+              Use the filters to focus on one type of work at a time.
+            </p>
+          </div>
+
+          <div class="filters" role="tablist" aria-label="Filter research items">
+            <button class="filter-btn active" data-filter="all" type="button">All</button>
+            <button class="filter-btn" data-filter="working-paper" type="button">Working Papers</button>
+            <button class="filter-btn" data-filter="publication" type="button">Publications</button>
+            <button class="filter-btn" data-filter="other-writing" type="button">Other Writing</button>
+          </div>
+
+          <div class="research-list">
+            <article class="research-item" data-type="working-paper">
+              <div class="item-topline">
+                <span class="type-tag">Working Paper</span>
+                <span class="year-tag">In Progress</span>
+              </div>
+              <h3>Projects in labor, public, and health economics</h3>
+              <p class="item-meta">
+                Early-stage projects in applied microeconomics. Titles and abstracts will
+                be posted here as drafts become ready for circulation.
+              </p>
+              <button class="abstract-toggle" type="button" aria-expanded="false">
+                Abstract
+              </button>
+              <div class="abstract-panel" hidden>
+                <p>
+                  Current work is centered on policy-relevant questions in labor markets,
+                  public policy, and health. This placeholder preserves the structure of the
+                  site so draft titles, PDF links, and abstracts can be added without changing
+                  the layout.
+                </p>
+              </div>
+              <p class="item-links">
+                <a href="mailto:qxu12@gsu.edu?subject=Request%20for%20current%20drafts">Draft available upon request</a>
+              </p>
+            </article>
+
+            <article class="research-item" data-type="publication">
+              <div class="item-topline">
+                <span class="type-tag">Publication</span>
+                <span class="year-tag">2022</span>
+              </div>
+              <h3>Predicting sustainable food consumption across borders based on the theory of planned behavior: A meta-analytic structural equation model</h3>
+              <p class="item-meta">with Xin Shen and Qiao Liu. <em>PLOS ONE</em>, 2022.</p>
+              <button class="abstract-toggle" type="button" aria-expanded="false">
+                Abstract
+              </button>
+              <div class="abstract-panel" hidden>
+                <p>
+                  A meta-analytic structural equation model studying which attitudinal and
+                  behavioral factors shape sustainable food consumption across contexts.
+                </p>
+              </div>
+              <p class="item-links">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/36383540/" target="_blank" rel="noreferrer">Journal</a>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9668161/" target="_blank" rel="noreferrer">Open Access</a>
+              </p>
+            </article>
+
+            <article class="research-item" data-type="publication">
+              <div class="item-topline">
+                <span class="type-tag">Publication</span>
+                <span class="year-tag">2023</span>
+              </div>
+              <h3>The relationship between supply chain resilience, supply chain integration, and supply chain performance: A MASEM analysis</h3>
+              <p class="item-meta">with Xin Shen, Qiao Liu, and Markus Leibercht. <em>Journal of Intelligent &amp; Fuzzy Systems</em>, 2023.</p>
+              <button class="abstract-toggle" type="button" aria-expanded="false">
+                Abstract
+              </button>
+              <div class="abstract-panel" hidden>
+                <p>
+                  A meta-analytic structural equation approach examining how supply chain
+                  resilience and integration relate to firm performance.
+                </p>
+              </div>
+              <p class="item-links">
+                <a href="https://journals.sagepub.com/doi/pdf/10.3233/JIFS-220649" target="_blank" rel="noreferrer">Journal</a>
+              </p>
+            </article>
+
+            <article class="research-item" data-type="other-writing">
+              <div class="item-topline">
+                <span class="type-tag">Other Writing</span>
+                <span class="year-tag">Profile</span>
+              </div>
+              <h3>Selected earlier publications and interdisciplinary research</h3>
+              <p class="item-meta">
+                Additional pre-PhD work is listed below in the earlier publications section.
+              </p>
+              <button class="abstract-toggle" type="button" aria-expanded="false">
+                Abstract
+              </button>
+              <div class="abstract-panel" hidden>
+                <p>
+                  Before starting the PhD, I worked on collaborative projects spanning health,
+                  applied data analysis, and interdisciplinary policy-related topics.
+                </p>
+              </div>
+              <p class="item-links">
+                <a href="#publications">Jump to earlier publications</a>
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
 
-  </div>
+    <section class="section alt-section">
+      <div class="container section-grid">
+        <div class="section-label">
+          <p>Publications</p>
+        </div>
+        <div class="section-content" id="publications">
+          <div class="section-heading">
+            <h2>Earlier publications</h2>
+            <p>
+              Selected publications from before the PhD. This list is intentionally curated
+              rather than automatically imported.
+            </p>
+          </div>
+
+          <div class="publication-list">
+            <article class="publication-item">
+              <h3>Association between cumulative average BMI and cognitive decline: a 24-year cohort study</h3>
+              <p>with Meng Hsuan Sung, Zhuo Chen, and coauthors. <em>Journal of Neurology</em>, 2026.</p>
+              <p class="item-links">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/41758252/" target="_blank" rel="noreferrer">PubMed</a>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12948888/" target="_blank" rel="noreferrer">Open Access</a>
+              </p>
+            </article>
+
+            <article class="publication-item">
+              <h3>Predicting sustainable food consumption across borders based on the theory of planned behavior: A meta-analytic structural equation model</h3>
+              <p>with Xin Shen and Qiao Liu. <em>PLOS ONE</em>, 2022.</p>
+              <p class="item-links">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/36383540/" target="_blank" rel="noreferrer">PubMed</a>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9668161/" target="_blank" rel="noreferrer">Open Access</a>
+              </p>
+            </article>
+
+            <article class="publication-item">
+              <h3>The relationship between supply chain resilience, supply chain integration, and supply chain performance: A MASEM analysis</h3>
+              <p>with Xin Shen, Qiao Liu, and Markus Leibercht. <em>Journal of Intelligent &amp; Fuzzy Systems</em>, 2023.</p>
+              <p class="item-links">
+                <a href="https://journals.sagepub.com/doi/pdf/10.3233/JIFS-220649" target="_blank" rel="noreferrer">Journal</a>
+              </p>
+            </article>
+
+            <article class="publication-item">
+              <h3>Association between Helicobacter pylori infection and nonalcoholic fatty liver: A meta-analysis</h3>
+              <p>with Rongqiang Liu and coauthors. <em>Medicine</em>, 2019.</p>
+              <p class="item-links">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/31689846/" target="_blank" rel="noreferrer">PubMed</a>
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-grid">
+        <div class="section-label">
+          <p>Updates</p>
+        </div>
+        <div class="section-content" id="updates">
+          <div class="section-heading">
+            <h2>Current updates</h2>
+            <p>
+              A short timeline that gives visitors context on where I am in the PhD and what
+              I am currently working on.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <p class="timeline-date">Spring 2026</p>
+              <p>Second-year PhD training in economics at Georgia State University.</p>
+            </article>
+            <article class="timeline-item">
+              <p class="timeline-date">Current focus</p>
+              <p>Developing research interests in labor economics, public economics, and health economics.</p>
+            </article>
+            <article class="timeline-item">
+              <p class="timeline-date">Research pipeline</p>
+              <p>Building early-stage projects in applied microeconomics and empirical policy analysis.</p>
+            </article>
+            <article class="timeline-item">
+              <p class="timeline-date">Earlier work</p>
+              <p>Selected pre-PhD publications are listed above and reflect prior interdisciplinary collaborations.</p>
+            </article>
+            <article class="timeline-item">
+              <p class="timeline-date">Site updates</p>
+              <p>Draft papers, presentation updates, and a PDF CV can be added here as the PhD portfolio expands.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container section-grid">
+        <div class="section-label">
+          <p>Teaching</p>
+        </div>
+        <div class="section-content" id="teaching">
+          <div class="section-heading">
+            <h2>Teaching</h2>
+            <p>
+              A light teaching section keeps the homepage balanced while leaving room for
+              more detail later.
+            </p>
+          </div>
+
+          <div class="teaching-card">
+            <p class="teaching-title">Teaching and assistantship details will be added here.</p>
+            <p>
+              If you would like, this can later be updated with specific TA assignments,
+              instructor roles, office hours, or course materials.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Qianhui Xu</p>
+      <p><a href="mailto:qxu12@gsu.edu">qxu12@gsu.edu</a></p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>

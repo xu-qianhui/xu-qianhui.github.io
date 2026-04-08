@@ -1,22 +1,29 @@
-// Abstract toggle
-document.querySelectorAll('.abstract-toggle').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const abstract = btn.nextElementSibling;
-    const isOpen = abstract.classList.toggle('open');
-    btn.textContent = isOpen ? '− Abstract' : '+ Abstract';
+const filterButtons = document.querySelectorAll(".filter-btn");
+const researchItems = document.querySelectorAll(".research-item");
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+
+    filterButtons.forEach((item) => item.classList.remove("active"));
+    button.classList.add("active");
+
+    researchItems.forEach((item) => {
+      const shouldShow = filter === "all" || item.dataset.type === filter;
+      item.classList.toggle("is-hidden", !shouldShow);
+    });
   });
 });
 
-// Filter buttons
-document.querySelectorAll('.filter-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
+const abstractButtons = document.querySelectorAll(".abstract-toggle");
 
-    const filter = btn.dataset.filter;
-    document.querySelectorAll('.paper').forEach(paper => {
-      const show = filter === 'all' || paper.dataset.type === filter;
-      paper.style.display = show ? 'block' : 'none';
-    });
+abstractButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const panel = button.nextElementSibling;
+    const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+    button.setAttribute("aria-expanded", String(!isExpanded));
+    panel.hidden = isExpanded;
+    button.textContent = isExpanded ? "Abstract" : "Hide abstract";
   });
 });
