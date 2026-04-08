@@ -1,0 +1,157 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #111;
+    background: #fff;
+  }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 24px 100px;
+  }
+
+  /* Header */
+  header { margin-bottom: 32px; }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+
+  .affiliation {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+  }
+
+  /* Bio */
+  .bio {
+    margin-bottom: 48px;
+    font-size: 0.97rem;
+  }
+
+  .bio p { margin-bottom: 12px; }
+
+  a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+  a:hover { opacity: 0.6; }
+
+  /* Section headers */
+  h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 20px;
+    margin-top: 48px;
+  }
+
+  /* Filters */
+  .filters {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    font-size: 0.85rem;
+    color: #666;
+  }
+
+  .filter-btn {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 3px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.82rem;
+    color: #444;
+    transition: all 0.15s;
+  }
+
+  .filter-btn:hover { border-color: #999; }
+
+  .filter-btn.active {
+    background: #111;
+    color: #fff;
+    border-color: #111;
+  }
+
+  /* Papers */
+  .paper {
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+  }
+
+  .paper:last-child { border-bottom: 1px solid #eee; }
+
+  .paper-header {
+    display: flex;
+    gap: 12px;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #999;
+    margin-bottom: 6px;
+  }
+
+  .paper-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+
+  .paper-coauthors, .paper-journal {
+    font-size: 0.88rem;
+    color: #555;
+    margin-bottom: 4px;
+  }
+
+  .abstract-toggle {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 0.82rem;
+    cursor: pointer;
+    padding: 4px 0;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .abstract-toggle:hover { color: #333; }
+
+  .abstract {
+    display: none;
+    font-size: 0.88rem;
+    color: #444;
+    margin-top: 10px;
+    padding-left: 16px;
+    border-left: 2px solid #eee;
+    line-height: 1.6;
+  }
+
+  .abstract.open { display: block; }
+
+  .paper-links {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: #666;
+  }
+
+  /* Teaching */
+  section ul {
+    list-style: none;
+    font-size: 0.95rem;
+  }
+
+  section ul li {
+    padding: 4px 0;
+    border-top: 1px solid #f0f0f0;
+  }
+
+  section ul li:last-child { border-bottom: 1px solid #f0f0f0; }
