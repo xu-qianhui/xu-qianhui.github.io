@@ -86,6 +86,12 @@ h3 {
   font-size: 0.94rem;
 }
 
+.site-nav a.is-current {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .site-nav a:hover {
   color: var(--text);
 }
@@ -215,6 +221,57 @@ h1 {
 
 .section {
   padding: 0.8rem 0 0;
+}
+
+.page-main {
+  padding: 1.2rem 0 0;
+}
+
+.page-header {
+  padding: 0.8rem 0 0;
+}
+
+.page-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.04;
+}
+
+.page-block {
+  padding: 1.1rem 0 2rem;
+}
+
+.home-summary {
+  max-width: 60ch;
+  margin-bottom: 1.5rem;
+}
+
+.home-links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--border);
+}
+
+.home-link-card {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+}
+
+.home-link-card:nth-child(odd) {
+  padding-right: 1rem;
+}
+
+.home-link-card:nth-child(even) {
+  padding-left: 1rem;
+}
+
+.home-link-label {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 1.15rem;
+  color: var(--text);
 }
 
 .section-grid {
@@ -444,6 +501,16 @@ h1 {
 
   .portrait-card {
     max-width: 250px;
+  }
+
+  .home-links-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-link-card:nth-child(odd),
+  .home-link-card:nth-child(even) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
