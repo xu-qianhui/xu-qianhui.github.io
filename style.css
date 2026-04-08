@@ -181,7 +181,8 @@ h1 {
   color: var(--accent);
 }
 
-.location-text {
+.location-text,
+.footer-location {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
@@ -484,6 +485,13 @@ h1 {
   font-family: "Newsreader", Georgia, serif;
   font-size: clamp(1.7rem, 4vw, 2.7rem);
   line-height: 1.12;
+}
+
+.footer-location {
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 @media (max-width: 900px) {
