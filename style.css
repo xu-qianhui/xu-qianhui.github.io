@@ -7,7 +7,7 @@
   --muted: #6c6357;
   --accent: #66513d;
   --accent-soft: #eee5d9;
-  --container: 1020px;
+  --container: 1120px;
 }
 
 *,
@@ -35,6 +35,7 @@ a {
 }
 
 a:hover {
+  color: var(--accent);
   text-decoration-color: var(--accent);
 }
 
@@ -88,6 +89,7 @@ h3 {
 
 .site-nav a.is-current {
   color: var(--text);
+  font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 0.18em;
 }
@@ -102,7 +104,7 @@ h3 {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 230px minmax(0, 1fr);
+  grid-template-columns: 270px minmax(0, 1fr);
   gap: 2.1rem;
   align-items: start;
 }
@@ -113,7 +115,7 @@ h3 {
 
 .portrait {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
   border-radius: 6px;
   object-fit: cover;
   background: var(--surface-strong);
@@ -480,7 +482,7 @@ h1 {
   }
 
   .portrait-card {
-    max-width: 250px;
+    max-width: 280px;
   }
 
   .home-links-grid {
