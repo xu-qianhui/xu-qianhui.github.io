@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Source+Sans+3:wght@400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   >
   <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -44,10 +44,12 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="wordmark" href="index.html">Qianhui Xu</a>
+    <div class="container">
+      <h1 class="site-name">Qianhui Xu</h1>
+      <p class="site-subtitle">PhD Student in Economics, Georgia State University</p>
       <nav class="site-nav" aria-label="Primary">
-        <a class="is-current" href="index.html">About</a>
+        <a class="is-current" href="index.html">Home</a>
+        <a href="assets/cv-econ.pdf" target="_blank" rel="noreferrer">CV</a>
         <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
         <a href="updates.html">Updates</a>
@@ -58,26 +60,13 @@
 
   <main>
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="portrait-card">
-          <img
-            src="assets/qianhui-xu-photo.jpg"
-            alt="Portrait of Qianhui Xu"
-            class="portrait"
-          >
-          <p class="portrait-note">PhD Student in Economics at Georgia State University</p>
-        </div>
-
+      <div class="container">
+        <img
+          src="assets/qianhui-xu-photo.jpg"
+          alt="Portrait of Qianhui Xu"
+          class="portrait"
+        >
         <div class="hero-copy">
-          <h1>Qianhui Xu</h1>
-          <p class="title">PhD Student · Department of Economics · Georgia State University</p>
-
-          <ul class="meta-list">
-            <li><span>Email</span> <a href="mailto:qxu12@gsu.edu">qxu12@gsu.edu</a></li>
-            <li><span>Fields</span> Labor Economics, Public Economics, Health Economics</li>
-            <li><span>CV</span> <a href="assets/cv-econ.pdf" target="_blank" rel="noreferrer">Curriculum Vitae (PDF)</a></li>
-          </ul>
-
           <div class="intro">
             <p>
               I am a second-year PhD student in economics at Georgia State University.
@@ -91,15 +80,18 @@
             </p>
           </div>
 
+          <ul class="meta-list">
+            <li><span>Email</span> <a href="mailto:qxu12@gsu.edu">qxu12@gsu.edu</a></li>
+            <li><span>Fields</span> Labor Economics, Public Economics, Health Economics</li>
+          </ul>
+
           <div class="hero-links" aria-label="Profile links">
-            <a class="button-link" href="https://scholar.google.com/citations?user=aEYqAjsAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
-            <a class="button-link button-link-muted" href="research.html">Research Page</a>
-            <a class="button-link button-link-muted" href="publications.html">Publications</a>
+            <a href="https://scholar.google.com/citations?user=aEYqAjsAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+            <a href="assets/cv-econ.pdf" target="_blank" rel="noreferrer">Curriculum Vitae (PDF)</a>
           </div>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
