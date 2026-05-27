@@ -60,17 +60,11 @@ img {
   color: var(--text);
 }
 
-.site-subtitle {
-  margin: 0.3rem 0 1.1rem;
-  font-size: 1rem;
-  color: var(--muted);
-  font-weight: 400;
-}
-
 .site-nav {
   display: flex;
   flex-wrap: wrap;
   gap: 0 1.6rem;
+  margin-top: 0.8rem;
   padding: 0.7rem 0 0.8rem;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -98,11 +92,11 @@ img {
 }
 
 .portrait {
-  width: 220px;
-  height: 220px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto 1.6rem;
+  margin: 0 auto 1.4rem;
   background: #f4f4f4;
 }
 
@@ -361,7 +355,7 @@ img {
   }
 
   .portrait {
-    width: 180px;
-    height: 180px;
+    width: 130px;
+    height: 130px;
   }
 }
