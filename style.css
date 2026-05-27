@@ -157,6 +157,12 @@ img {
   padding: 0.5rem 0 2.5rem;
 }
 
+.section-note {
+  margin: 0 0 1.2rem;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
 .section-heading {
   margin-bottom: 1.4rem;
 }
