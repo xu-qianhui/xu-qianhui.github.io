@@ -68,8 +68,9 @@
 
   <footer class="site-footer">
     <div class="container footer-wrap">
-      <p>&copy; Qianhui Xu 2026</p>
+      <p>&copy; Qianhui Xu <span id="copyright-year">2026</span></p>
     </div>
   </footer>
+  <script>document.getElementById('copyright-year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
