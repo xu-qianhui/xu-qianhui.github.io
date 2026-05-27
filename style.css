@@ -92,15 +92,16 @@ img {
 
 .hero .container {
   display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 2.4rem;
   align-items: start;
 }
 
 .portrait {
-  width: 300px;
-  height: 360px;
-  border-radius: 2px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 6;
+  border-radius: 0;
   object-fit: cover;
   background: #f4f4f4;
 }
