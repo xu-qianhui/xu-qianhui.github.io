@@ -88,15 +88,20 @@ img {
 /* ---- Hero (homepage) ---- */
 .hero {
   padding: 2.4rem 0 1.4rem;
-  text-align: center;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
 }
 
 .portrait {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto 1.4rem;
   background: #f4f4f4;
 }
 
@@ -357,5 +362,15 @@ img {
   .portrait {
     width: 130px;
     height: 130px;
+  }
+
+  .hero .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .hero-copy {
+    text-align: left;
   }
 }
