@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xu-qianhui.github.io/sitemap.xml
