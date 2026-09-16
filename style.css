@@ -259,6 +259,10 @@ img {
   line-height: 1.32;
 }
 
+.research-item h3 + h3 {
+  margin-top: 0.85rem;
+}
+
 .item-meta,
 .publication-item p,
 .teaching-card p {
