@@ -19,7 +19,7 @@ const abstractButtons = document.querySelectorAll(".abstract-toggle");
 
 abstractButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const panel = button.nextElementSibling;
+    const panel = document.getElementById(button.getAttribute("aria-controls"));
     const isExpanded = button.getAttribute("aria-expanded") === "true";
 
     button.setAttribute("aria-expanded", String(!isExpanded));

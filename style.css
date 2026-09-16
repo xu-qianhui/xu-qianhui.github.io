@@ -263,8 +263,14 @@ img {
   margin-top: 1.1rem;
 }
 
-.research-item .item-links + h3 {
+.research-item .item-links + h3,
+.research-item .abstract-panel + h3 {
   margin-top: 1.1rem;
+}
+
+.item-links .abstract-toggle {
+  margin-top: 0;
+  font-size: inherit;
 }
 
 .publication-item {
